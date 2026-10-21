@@ -18,12 +18,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏎️%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"VR SPACE","url":"https://vrspacespb2024.ru/","telephone":"+79910490500","email":"sizinkiy8@gmail.com","description":"Выездные VR и Sim Racing мероприятия: корпоративы, дни рождения, выставки, фестивали.","address":{"@type":"PostalAddress","addressLocality":"Санкт-Петербург","addressCountry":"RU"},"areaServed":["Санкт-Петербург","Москва"],"sameAs":["https://t.me/VrTRIoLNA","https://vk.com/vrspace2024"]}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"VR SPACE","url":"https://vrspacespb2024.ru/","telephone":"+79910490500","priceRange":"10000-12000 RUB/час","email":"sizinkiy8@gmail.com","description":"Выездные VR и Sim Racing мероприятия: корпоративы, дни рождения, выставки, фестивали.","address":{"@type":"PostalAddress","addressLocality":"Санкт-Петербург","addressCountry":"RU"},"areaServed":["Санкт-Петербург","Москва"],"sameAs":["https://t.me/VrTRIoLNA","https://vk.com/vrspace2024"]}
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Inter:wght@400;500;600&display=swap">
 <style>
-:root{--bg:#0a0b12;--surface:#141626;--text:#f2f3fa;--muted:#9aa0bd;--accent:#ff3d71;--accent2:#00d4ff;--line:#262a45;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f7fc;--surface:#fff;--text:#12142a;--muted:#5b6082;--line:#dfe2f0;color-scheme:light}}
+:root{--bg:#0a0b12;--surface:#141626;--text:#f2f3fa;--muted:#9aa0bd;--accent:#1e8fff;--accent2:#19d3ff;--line:#262a45;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
 :root[data-theme="dark"]{--bg:#0a0b12;--surface:#141626;--text:#f2f3fa;--muted:#9aa0bd;--line:#262a45}
 html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
 *{box-sizing:border-box}
@@ -37,7 +36,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 nav{display:flex;gap:22px;font-size:14px;color:var(--muted)}
 nav a:hover{color:var(--text)}
 @media(max-width:640px){nav{display:none}}
-.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;background:linear-gradient(90deg,var(--accent),#ff7a3d);color:#fff;transition:transform .2s,box-shadow .2s}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;transition:transform .2s,box-shadow .2s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px var(--accent)}
 .btn.ghost{background:none;border:1px solid var(--line);color:var(--text)}
 .btn.ghost:hover{box-shadow:none;border-color:var(--accent2)}
@@ -70,7 +69,7 @@ h2{font-size:clamp(24px,3.6vw,38px);font-weight:800;margin-bottom:12px}
 .step h3{font-size:16px;margin-bottom:6px}.step p{margin:0;color:var(--muted);font-size:15px}
 .quote{display:grid;grid-template-columns:1fr 1.4fr;gap:34px;align-items:center}
 @media(max-width:760px){.quote{grid-template-columns:1fr}}
-.quote .media{border-radius:24px;aspect-ratio:1;font-size:70px;background:linear-gradient(135deg,#ff3d71,#00d4ff)}
+.quote .media{border-radius:24px;aspect-ratio:1;font-size:70px;background:linear-gradient(135deg,#1e8fff,#19d3ff)}
 blockquote{margin:18px 0 0;padding-left:18px;border-left:3px solid var(--accent);font-size:19px}
 blockquote cite{display:block;margin-top:8px;color:var(--muted);font-size:14px;font-style:normal}
 .review p{margin:0 0 14px;font-size:15px;color:var(--muted)}.review b{font-size:15px}
@@ -81,11 +80,31 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 footer .wrap{display:flex;flex-wrap:wrap;gap:16px 30px;justify-content:space-between}
 footer a:hover{color:var(--text)}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+
+.logo img{height:34px;width:auto;display:block;mix-blend-mode:screen}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.media.dark{background:#071427}.media.dark img.contain{object-fit:contain}
+.price{font:800 26px Unbounded,sans-serif;color:var(--accent2)}.price small{font:500 14px Inter,sans-serif;color:var(--muted)}
+.check{list-style:none;margin:0;padding:0;color:var(--muted);font-size:15px}
+.check li{padding-left:24px;position:relative;margin:5px 0}.check li::before{content:"✓";position:absolute;left:0;color:var(--accent2);font-weight:700}
+.card.hot{border-color:var(--accent);box-shadow:0 0 40px -14px var(--accent)}
+.note{color:var(--muted);font-size:14px;margin-top:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px 16px;text-align:center;font-weight:600;font-size:15px}
+.tile span{display:block;font-size:34px;margin-bottom:8px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.why div{border-left:3px solid var(--accent);padding:4px 0 4px 16px;color:var(--muted)}.why b{display:block;color:var(--text);margin-bottom:2px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.gallery figure{margin:0;border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+.gallery img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover}
+@media(max-width:640px){.hero{padding:110px 0 90px}}
+.card .media.dark{background:#071427!important}
+.hero p{color:#e3e6f5}
 </style>
 </head>
 <body>
 <header><div class="wrap">
-  <a class="logo" href="#top">VR<span> SPACE</span></a>
+  <a class="logo" href="#top"><img src="media/logo.png" alt="VR SPACE — VR / Sim Racing / Events"></a>
   <nav><a href="#uslugi">Услуги</a><a href="#kak">Как это работает</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
   <a class="btn" href="tel:+79910490500" style="padding:9px 18px;font-size:14px">Позвонить</a>
 </div></header>
@@ -94,7 +113,7 @@ footer a:hover{color:var(--text)}
 <div class="hero">
   <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg"><source src="media/hero.mp4" type="video/mp4"></video>
   <div class="wrap">
-  <span class="tag">Мероприятия в Санкт-Петербурге</span>
+  <span class="tag">Ваше событие — наша гонка!</span>
   <h1>Выездные VR и Sim Racing мероприятия в Санкт-Петербурге</h1>
   <p>Привезём VR и гоночные симуляторы прямо на ваше мероприятие. Корпоративы, дни рождения, выставки, фестивали и частные события — всё под ключ: оборудование, установка, настройка и сопровождение.</p>
   <div class="cta">
@@ -104,12 +123,41 @@ footer a:hover{color:var(--text)}
 </div></div>
 
 <section id="uslugi"><div class="wrap">
-  <h2>Виртуальная реальность и Sim Racing</h2>
-  <p class="lead">Выберите формат — подберём комплект под площадку, количество гостей и бюджет.</p>
+  <h2>Пакеты и цены</h2>
+  <p class="lead">Выберите пакет под ваше мероприятие. Стоимость указана за час работы оборудования.</p>
   <div class="grid">
-    <div class="card reveal"><div class="media" data-slot="static-sim">🏎️</div><div class="body"><h3>Статичный симулятор</h3><p>Руль, педали и сиденье: настоящие гонки на любом мероприятии.</p><a class="link" href="https://t.me/KimKDeals">Узнать подробнее →</a></div></div>
-    <div class="card reveal"><div class="media" data-slot="premium-sim">🏁</div><div class="body"><h3>Премиум симулятор</h3><p>Максимум погружения: усиленная обратная связь и топовое оборудование.</p><a class="link" href="https://t.me/KimKDeals">Узнать подробнее →</a></div></div>
-    <div class="card reveal"><div class="media" data-slot="vr-oculus">🥽</div><div class="body"><h3>VR Oculus</h3><p>Виртуальная реальность для гостей любого возраста: игры, аттракционы, эмоции.</p><a class="link" href="https://t.me/KimKDeals">Узнать подробнее →</a></div></div>
+    <div class="card reveal"><div class="media dark"><img src="media/pkg-standard.jpg" alt="Статичный симулятор: пакет Стандарт" loading="lazy"></div><div class="body"><h3>Пакет «Стандарт»</h3><div class="price">10 000 ₽ <small>/ час</small></div>
+      <ul class="check"><li>Спортивное сиденье</li><li>Руль Logitech G920</li><li>Раздельные педали</li><li>КПП</li><li>Телевизор 27″ со стойкой</li></ul>
+      <a class="link" href="https://t.me/KimKDeals">Заказать →</a></div></div>
+    <div class="card hot reveal"><div class="media dark"><img class="contain" src="media/pkg-premium.jpg" alt="Премиум симулятор: Moza R5 и Moza R12" loading="lazy"></div><div class="body"><h3>Пакет «Премиум Профессиональный»</h3><div class="price">12 000 ₽ <small>/ час</small></div>
+      <ul class="check"><li>Спортивный кокпит</li><li>Руль и раздельные педали</li><li>КПП + ручник</li><li>Moza R5 + Moza R12</li><li>Телевизор 55″</li></ul>
+      <p class="note">Варианты экранов: телевизор 55″ или изогнутый экран 32″.</p>
+      <a class="link" href="https://t.me/KimKDeals">Заказать →</a></div></div>
+    <div class="card reveal"><div class="media" style="font-size:72px">🥽</div><div class="body"><h3>Дополнительно: VR</h3><div class="price">+ 5 000 ₽</div>
+      <p>Виртуальная реальность для гостей любого возраста: игры, аттракционы, яркие эмоции.</p>
+      <a class="link" href="https://t.me/KimKDeals">Заказать →</a></div></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Форматы мероприятий</h2>
+  <p class="lead">VR и Sim Racing для компаний, друзей и семей. Для любых возрастов, Санкт-Петербург и Ленинградская область.</p>
+  <div class="tiles">
+    <div class="tile reveal"><span>🏢</span>Корпоративы и тимбилдинги</div>
+    <div class="tile reveal"><span>🎁</span>Дни рождения и праздники</div>
+    <div class="tile reveal"><span>🏆</span>Турниры и соревнования</div>
+    <div class="tile reveal"><span>🎈</span>Детские праздники</div>
+    <div class="tile reveal"><span>🤝</span>Индивидуальные мероприятия</div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Почему VR SPACE</h2>
+  <div class="why" style="margin-top:28px">
+    <div class="reveal"><b>Современное оборудование</b>Техника премиум-класса.</div>
+    <div class="reveal"><b>Полное погружение</b>В виртуальные миры и гонки.</div>
+    <div class="reveal"><b>Индивидуальный подход</b>К каждому клиенту.</div>
+    <div class="reveal"><b>Гибкие условия</b>Выгодное сотрудничество.</div>
   </div>
 </div></section>
 
@@ -130,6 +178,15 @@ footer a:hover{color:var(--text)}
     <h2 style="font-size:clamp(22px,3vw,32px)">Что думает профессиональный гонщик Арчи Гамильтон о гонках в виртуальной реальности</h2>
     <p class="lead" style="margin:14px 0 0">Арчи Гамильтон — профессиональный гонщик и звезда YouTube, который участвует в соревнованиях с 11 лет. Он выступал на самых известных трассах и турнирах, и для его тренировок подходит только лучшее оборудование.</p>
     <blockquote>«Честно говоря, раньше я не был поклонником VR, но потом попробовал и подумал, что это действительно очень впечатляет».<cite>— Арчи Гамильтон</cite></blockquote>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>С наших мероприятий</h2>
+  <p class="lead">Так выглядит наш симулятор на площадке.</p>
+  <div class="gallery">
+    <figure class="reveal"><img src="media/event-1.jpg" alt="Гость за рулём гоночного симулятора на выставке" loading="lazy"></figure>
+    <figure class="reveal"><img src="media/event-2.jpg" alt="Гоночный симулятор на выставочном стенде" loading="lazy"></figure>
   </div>
 </div></section>
 
